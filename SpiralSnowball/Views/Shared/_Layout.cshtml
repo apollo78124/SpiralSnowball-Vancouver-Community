@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SpiralSnowball</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+    <link rel="stylesheet" href="~/css/nav-bar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SpiralSnowball.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="nav-bar-v20230311">
+            <div class="nav-bar-container">
+                <a class="site-logo" asp-area="" asp-controller="Home" asp-action="Index">SpiralSnowball</a>
+                <div class="site-map">
+                    <div class="nav-item">
+                        <a class="" asp-area="" asp-controller="Home" asp-action="Index">Vancouver</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="" asp-area="" asp-controller="Home" asp-action="Privacy">Toronto</a>
+                    </div>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    @RenderBody()
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - SpiralSnowball - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
