@@ -16,11 +16,31 @@
         justify-content: space-between;
     }
 
-    nav.nav-bar-v20230311 .nav-bar-container * {
-        color: #FFFFFF;
-    }
+        nav.nav-bar-v20230311 .nav-bar-container * {
+            color: #FFFFFF;
+            font-family: 'Catamaran';
+        }
 
-        nav.nav-bar-v20230311 .nav-bar-container .site-logo {
+        nav.nav-bar-v20230311 .nav-bar-container a {
+            color: #FFFFFF;
+            font-family: 'Catamaran';
+            text-decoration: none;
+        }
+
+        nav.nav-bar-v20230311 .nav-bar-container .logo-wrapper {
+            display: flex;
+            align-content: start;
+        }
+
+            nav.nav-bar-v20230311 .nav-bar-container .logo-wrapper img {
+                width: 27px;
+                background-color: white;
+                height: 13px;
+                margin-top: 14px;
+                margin-left: 9px;
+            }
+
+        nav.nav-bar-v20230311 .nav-bar-container a.site-logo {
             font-family: 'Catamaran';
             font-weight: 700;
             color: #FFFFFF;
@@ -31,6 +51,7 @@
         nav.nav-bar-v20230311 .nav-bar-container .site-map {
             display: flex;
             column-gap: 24px;
+            align-items: center;
         }
 
             nav.nav-bar-v20230311 .nav-bar-container .site-map .navbar-right {
