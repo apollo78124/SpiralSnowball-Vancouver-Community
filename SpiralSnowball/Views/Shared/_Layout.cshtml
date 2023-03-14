@@ -15,7 +15,7 @@
             <div class="nav-bar-container">
                 <div class="logo-wrapper">
                     <a class="site-logo" asp-area="" asp-controller="Home" asp-action="Index">SpiralSnowball</a>
-                    <img src="image/canada-flag.svg" />
+                    <img src="~/image/canada-flag.svg" />
 
                 </div>
                 <div class="site-map">
@@ -33,12 +33,17 @@
     @RenderBody()
 
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer-v20230312">
         <div class="container">
-            &copy; 2023 - SpiralSnowball - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <p>2023 SpiralSnowball</p>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    @if (IsSectionDefined("Scripts"))
+    {
+        RenderSection("Scripts");
+    }
 </body>
 </html>
