@@ -1,0 +1,30 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout !=  null)
+    {
+        Layout = parentLayout.ToString();
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+}
+
+
+
+
+
+<partial name="_ManageNav" />
+<main role="main">
+    <div class="wrapper">
+        <div class="container">
+            <h1>@ViewData["Title"]</h1>
+            <p>Make an account to post and comment</p>
+            @RenderBody()
+        </div>
+    </div>
+</main>
+
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}
