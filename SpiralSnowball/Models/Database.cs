@@ -16,7 +16,8 @@ namespace SpiralSnowball.Models
         [DataType(DataType.Date)]
         public DateTime LastEdit { get; set; }
         public string? Content { get; set; }
-
+        [Required]
+        public string UserID { get; set; } = "";
     }
 
     public class Post
@@ -32,7 +33,8 @@ namespace SpiralSnowball.Models
         [DataType(DataType.Date)]
         public DateTime LastEdit { get; set; }
         public string? Content { get; set; }
-        
+        [Required]
+        public string UserID { get; set; } = "";
     }
 
     public class Comment
@@ -47,5 +49,7 @@ namespace SpiralSnowball.Models
         [DataType(DataType.Date)]
         public DateTime LastEdit { get; set; }
         public string? Content { get; set; }
+        [Required]
+        public string UserID { get; set; } = "";
     }
 }
