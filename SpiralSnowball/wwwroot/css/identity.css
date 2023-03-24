@@ -13,10 +13,20 @@
         margin-bottom: 8px;
     }
 
-        section.login-form .input-wrapper .text-danger {
+        section.login-form .input-wrapper .text-danger
+         {
             color: #D73232;
             font-size: 10px;
         }
+
+.wrapper .text-danger * {
+    color: #D73232;
+    font-size: 14px;
+}
+
+.wrapper .text-danger ul {
+padding-left: 0px;
+}
 
         section.login-form .input-wrapper input {
             width: 100%;
